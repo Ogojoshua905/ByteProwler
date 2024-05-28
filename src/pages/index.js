@@ -17,13 +17,13 @@ export default function Home() {
           initial='hidden'
           animate="show"
           exit="hidden"
-          className="h1">Where Code meets<br /><span className="text-accent uppercase">Creativity</span></motion.h1>
+          className="h1 my-4">Where Code meets<br /><span className="text-accent uppercase">Creativity</span></motion.h1>
           <motion.p 
           variants={fadeIn('down',0.3)}
           initial='hidden'
           animate="show"
           exit="hidden"
-          className=" max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">Welcome to my portfolio! I&apos;m a passionate Frontend Web Developer on a journey to become a Fullstack Developer. 
+          className=" max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-16">Welcome to my portfolio! I&apos;m a passionate Frontend Web Developer on a journey to become a Fullstack Developer. 
           With a strong foundation in creating dynamic and responsive user-friendly interfaces, I&apos;m always looking for new challenges and opportunities to grow , I thrive on bringing creative ideas 
           to life through code.</motion.p>
           <div className="flex justify-center xl:hidden relative"><ProjectsBtn /></div>
@@ -32,7 +32,7 @@ export default function Home() {
           initial='hidden'
           animate="show"
           exit="hidden"
-           className=" hidden xl:flex right-10"><ProjectsBtn /></motion.div>
+           className=" hidden xl:flex right-10 xl:mb-5"><ProjectsBtn /></motion.div>
         </div>
         </div>
       <div className=" w-[1200px] h-full absolute right-0 bottom-0">

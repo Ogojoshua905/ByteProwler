@@ -1,27 +1,27 @@
-import { Sora } from "next/font/google"
-import Navbar from "./Navbar"
-import Header from './Header'
-import TopRightBulb from './TopRightBulb'
+import { Sora } from "next/font/google";
+import Head from "next/head";
+import Navbar from "./Navbar";
+import Header from './Header';
+import TopRightBulb from './TopRightBulb';
 
 const sora = Sora({
-  subsets:['latin'],
+  subsets: ['latin'],
   variable: '--font-sora',
-  weight: ['100', '200','300', '400', '500', '600', '700', '800']
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 });
 
-export const metadata ={
-  title: 'ByteProwler',
-  description: "Coding Ideas to Life",
-  keywords: 'html, tailwindcss, js, javascript'
-}
-
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
-    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} relative`}>
+    <div className={`page bg-site min-h-[100vh] text-white bg-cover bg-no-repeat ${sora.variable} absolute`}>
+      <Head>
+        <title>ByteProwler</title>
+        <meta name="description" content="Coding Ideas to Life" />
+        <meta name="keywords" content="html, tailwindcss, js, javascript" />
+      </Head>
       <TopRightBulb />
-        <Navbar />
-        <Header />
+      <Navbar />
+      <Header />
       {children}
     </div>
-  )
+  );
 }
