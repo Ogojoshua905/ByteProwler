@@ -27,12 +27,12 @@ export const aboutData = [
       {
         title: 'Frontend Developer',
         icons: [
-          <FaHtml5 className='text-[#E34F26]' />,
-          <FaCss3 className=" text-[#38BDF8]" />,
-          <FaJs className=" text-[#F7DF1E]" />,
-          <FaReact className=" text-[#61DAFB]" />,
-          <SiNextdotjs/>,
-          <SiFramer className=" text-[#0055FF]" />,
+          { id: 'html', icon: <FaHtml5 className='text-[#E34F26]' /> },
+          { id: 'css', icon: <FaCss3 className=" text-[#38BDF8]" /> },
+          { id: 'js', icon: <FaJs className=" text-[#F7DF1E]" /> },
+          { id: 'react', icon: <FaReact className=" text-[#61DAFB]" /> },
+          { id: 'nextjs', icon: <SiNextdotjs /> },
+          { id: 'framer', icon: <SiFramer className=" text-[#0055FF]" /> },
         ],
       },
       {
@@ -93,7 +93,7 @@ export const aboutData = [
   },
 ];
 
-export default function index() {
+export default function Index() {
 
   const [index, setIndex] = useState(0);
   console.log(index)
@@ -179,9 +179,9 @@ export default function index() {
                   <div className=" hidden md:flex">-</div>
                   <div  >{item.stage}</div>
                   <div className=" flex gap-x-4">
-                  {item.icons?.map((icon, itemIndex) => {
-                    return <div key={icon} className=" text-2xl text-white">
-                        {icon}
+                  {item.icons?.map((icon) => {
+                    return <div key={icon.id} className=" text-2xl text-white">
+                        {icon.icon}
                       </div>
                   })}
               </div>
