@@ -13,11 +13,13 @@ const sora = Sora({
 export default function Layout({ children }) {
   return (
     <div className={`page bg-site min-h-[100vh] text-white bg-cover bg-no-repeat ${sora.variable} absolute`}>
+
       <Head>
         <title>ByteProwler</title>
         <meta name="description" content="Coding Ideas to Life" />
         <meta name="keywords" content="html, tailwindcss, js, javascript" />
       </Head>
+      
       <TopRightBulb />
       <Navbar />
       <Header />
