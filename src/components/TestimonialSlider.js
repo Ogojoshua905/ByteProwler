@@ -16,23 +16,30 @@ import {
       name: 'Anne Smith',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'Anne provided a glowing review of our services, highlighting our commitment to quality and customer satisfaction. She appreciated the timely support and seamless experience.',
+      rating: 5,
+      date: '2023-01-15',
     },
     {
       image: '/t-avt-2.png',
       name: 'Jane Doe',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'Jane was thrilled with the results of our collaboration. She mentioned that our team went above and beyond to meet her expectations, delivering exceptional value.',
+      rating: 4,
+      date: '2023-02-10',
     },
     {
       image: '/t-avt-3.png',
-      name: 'Jhon Doe',
+      name: 'John Doe',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'John praised our professionalism and expertise. He noted that our innovative solutions significantly improved his business operations and efficiency.',
+      rating: 5,
+      date: '2023-03-05',
     },
   ];
+  
     
     
     export default function TestimonialSlider() {

@@ -23,7 +23,7 @@ export default function Services() {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className=' mb-4 max-w-[400px] mx-auto lg:mx-0'>Blank</motion.p>
+          className=' mb-4 max-w-[400px] mx-auto lg:mx-0'>I offer a variety of services to meet your needs, including web development, UI/UX design, and more. Let&apos;s work together to bring your ideas to life.</motion.p>
         </div>
         <motion.div
         variants={fadeIn('down', 0.8)}
